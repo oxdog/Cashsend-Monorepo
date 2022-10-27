@@ -1,0 +1,10 @@
+query PartnerFindById($_id: ObjectId!) {
+  partner_PartnerFindById(_id: $_id) {
+    errors {
+      ...RegularError
+    }
+    partner {
+      ...RegularPartner
+    }
+  }
+}

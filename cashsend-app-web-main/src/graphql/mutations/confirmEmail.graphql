@@ -1,0 +1,6 @@
+mutation ConfirmEmail($token: String!) {
+  auth_confirmEmail(token: $token) {
+    success
+    error
+  }
+}

@@ -1,0 +1,5 @@
+mutation OffSessionPayment($amount: Float!, $partnerID: ObjectId!) {
+  pay_offSessionPayment(amount: $amount, partnerID: $partnerID) {
+    orderID
+  }
+}

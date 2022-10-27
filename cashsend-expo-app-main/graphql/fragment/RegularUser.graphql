@@ -1,0 +1,8 @@
+fragment RegularUser on User {
+  _id
+  email
+  firstName
+  verified
+  defaultPaymentMethod
+  isDefaultPaymentMethodProcessing
+}

@@ -1,0 +1,44 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "alwaysStrict": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "lib": ["dom", "es2017"],
+    "module": "esnext",
+    "moduleResolution": "node",
+    "noEmit": true,
+    "noImplicitThis": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "target": "esnext",
+    "baseUrl": ".",
+    "paths": {
+      "@components/*": ["src/components/*"],
+      "@generated/*": ["src/generated/*"],
+      "@graphql/*": ["src/graphql/*"],
+      "@hooks/*": ["src/hooks/*"],
+      "@customTypes/*": ["src/customTypes/*"],
+      "@utils/*": ["src/utils/*"],
+      "@public/*": ["public/*"]
+    }
+  },
+  "exclude": ["node_modules"],
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    "../lireddit-server/src/migrations/1613062583769-FakePosts.ts",
+    "../lireddit-server/src/migrations/1613076960324-FakePosts.ts",
+    "src/utils/apollo/createWithApollo.js",
+    "src/pages/change-password/[tokenOld]",
+    "src/pages/forgot-password.tsx",
+    "src/pages/talk/[youtubeId].tsx"
+  ]
+}

@@ -1,0 +1,11 @@
+mutation LoginGoogle($token: String!) {
+  auth_loginGoogle(token: $token) {
+    authToken
+    errors {
+      ...RegularError
+    }
+    user {
+      ...RegularUser
+    }
+  }
+}

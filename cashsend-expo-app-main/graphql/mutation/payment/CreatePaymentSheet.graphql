@@ -1,0 +1,7 @@
+mutation CreatePaymentSheet($amount: Float!, $partnerID: ObjectId!) {
+  pay_createPaymentSheet(amount: $amount, partnerID: $partnerID) {
+    paymentIntent
+    ephemeralKey
+    customer
+  }
+}

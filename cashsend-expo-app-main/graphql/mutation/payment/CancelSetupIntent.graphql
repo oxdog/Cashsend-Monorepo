@@ -1,0 +1,3 @@
+mutation CancelSetupIntent {
+  pay_cancelSetupIntent
+}

@@ -1,0 +1,3 @@
+query ValdiateDefaultPaymentMethod {
+  pay_validateDefaultPaymentMethod
+}

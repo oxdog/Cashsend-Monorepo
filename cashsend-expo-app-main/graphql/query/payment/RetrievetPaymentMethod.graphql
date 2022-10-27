@@ -1,0 +1,5 @@
+query RetrievetPaymentMethod($paymentMethodId: String!) {
+  pay_retrievetPaymentMethod(paymentMethodId: $paymentMethodId) {
+    ...RegularPaymentMethod
+  }
+}

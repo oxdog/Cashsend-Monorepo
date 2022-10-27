@@ -1,0 +1,5 @@
+mutation CreateSetupIntent {
+  pay_createSetupIntent {
+    clientSecret
+  }
+}

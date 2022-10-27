@@ -1,0 +1,3 @@
+query stripePublicKey {
+  pay_stripePublicKey
+}

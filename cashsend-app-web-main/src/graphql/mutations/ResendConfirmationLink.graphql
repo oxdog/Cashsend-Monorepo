@@ -1,0 +1,6 @@
+mutation ResendConfirmationLink($token: String!) {
+  auth_resendConfirmationLink(token: $token) {
+    success
+    error
+  }
+}

@@ -1,0 +1,16 @@
+overwrite: true
+schema: http://localhost:4000/graphql
+documents: graphql/**/*.graphql
+generates:
+  generated/graphql-react.tsx:
+    plugins:
+      - typescript
+      - typescript-operations
+      - typescript-react-apollo
+  generated/graphql-requests.ts:
+    plugins:
+      - typescript
+      - typescript-operations
+      - typescript-graphql-request
+    config:
+      rawRequest: true

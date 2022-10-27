@@ -1,0 +1,11 @@
+mutation Register($email: String!, $firstName: String!, $password: String!) {
+  auth_register(options: { email: $email, firstName: $firstName, password: $password }) {
+    authToken
+    user {
+      ...RegularUser
+    }
+    errors {
+      ...RegularError
+    }
+  }
+}

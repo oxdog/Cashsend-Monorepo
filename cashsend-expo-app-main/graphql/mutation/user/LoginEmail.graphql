@@ -1,0 +1,11 @@
+mutation LoginEmail($email: String!, $password: String!) {
+  auth_loginEmail(email: $email, password: $password) {
+    authToken
+    errors {
+      ...RegularError
+    }
+    user {
+      ...RegularUser
+    }
+  }
+}

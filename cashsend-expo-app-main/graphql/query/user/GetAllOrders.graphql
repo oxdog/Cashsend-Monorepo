@@ -1,0 +1,10 @@
+query GetAllOrders {
+  order_GetAllFromUser {
+    errors {
+      ...RegularError
+    }
+    orders {
+      ...RegularOrder
+    }
+  }
+}

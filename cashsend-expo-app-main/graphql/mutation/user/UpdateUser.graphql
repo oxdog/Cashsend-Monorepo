@@ -1,0 +1,5 @@
+mutation UpdateUser($updateRecrod: UpdateUserInput!) {
+  user_update(updateRecrod: $updateRecrod) {
+    firstName
+  }
+}

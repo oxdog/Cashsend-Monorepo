@@ -1,0 +1,8 @@
+fragment RegularPaymentMethod on RetrievetPaymentMethodResponse {
+  paymentMethod {
+    type
+    last4
+    owner
+  }
+  isProcessing
+}

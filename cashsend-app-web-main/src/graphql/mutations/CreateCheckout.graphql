@@ -1,0 +1,9 @@
+mutation CreateCheckout($amount: Float!, $email: String!, $partnerID: ObjectId!) {
+  pay_createCheckoutNonCustomer(
+    amount: $amount
+    email: $email
+    partnerID: $partnerID
+  ) {
+    checkoutSessionID
+  }
+}

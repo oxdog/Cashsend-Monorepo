@@ -1,0 +1,6 @@
+mutation RequestConfirmationEmail($email: String!) {
+  auth_requestConfirmationEmail(email: $email) {
+    success
+    error
+  }
+}

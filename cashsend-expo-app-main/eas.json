@@ -1,0 +1,54 @@
+{
+  "build": {
+    "baseProfile": {
+      "env": {
+        "AGB_LINK": "https://www.cashsend.com/allgemeine-geschaefts-bedingungen",
+        "ANDROID_OAUTH_CLIENT_ID_GOOGLE": "218512832828-4ponsrnsi7fu4eqajbif1k91s3uump95.apps.googleusercontent.com",
+        "DEEP_LINK_SCHEME": "cashsend.app",
+        "FACEBOOK_CLIENT_ID": "2980671345501961",
+        "FACEBOOK_SCHEME": "fb2980671345501961",
+        "GRAPHQL_ENDPOINT": "https://CS-main-api.herokuapp.com/graphql",
+        "IOS_OAUTH_CLIENT_ID_GOOGLE": "218512832828-gggvo5mcfdtcat8nhujrvu1dmc900a8a.apps.googleusercontent.com",
+        "PRIVACY_POLICY_LINK": "https://www.cashsend.com/datenschutz-bestimmung",
+        "SENTRY_DSN": "https://b6027ca70f504fea996d2f972f0337f2@o968446.ingest.sentry.io/5919816",
+        "STRIPE_MERCHANT_IDENTIFIER": "cashsend.com.stripe.react.native",
+        "STRIPE_URL_SCHEME": "wwww.regionalfood.com",
+        "WEB_ENDPOINT": "https://webservices.cashsend.com",
+        "WEB_OAUTH_CLIENT_ID_GOOGLE": "818560494046-6oef33betdim83upffknd0g9q21cksk4.apps.googleusercontent.com"
+      }
+    },
+
+    "release": {
+      "extends": "baseProfile",
+      "cache": {
+        "key": "cache_1.0"
+      }
+    },
+
+    "development": {
+      "extends": "baseProfile",
+      "developmentClient": true,
+      "distribution": "internal"
+    },
+
+    "preview": {
+      "extends": "baseProfile",
+      "android": {
+        "buildType": "apk"
+      }
+    }
+  },
+  "submit": {
+    "release": {
+      "android": {
+        "serviceAccountKeyPath": "../path/to/api-xxx-yyy-zzz.json",
+        "track": "internal"
+      },
+      "ios": {
+        "appleId": "nico.reindl@cashsend.com",
+        "ascAppId": "1587014122",
+        "appleTeamId": "3MU9UPY8W7"
+      }
+    }
+  }
+}

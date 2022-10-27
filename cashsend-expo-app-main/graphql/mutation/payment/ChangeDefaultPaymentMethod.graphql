@@ -1,0 +1,3 @@
+mutation ChangeDefaultPaymentMethod($type: PaymentMethodOptions!) {
+  pay_changeDefaultPaymentMethod(type: $type)
+}

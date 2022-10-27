@@ -1,0 +1,13 @@
+mutation CreateCheckout(
+  $amount: Float!
+  $partnerID: ObjectId!
+  $redirect: PaymentRedirectLinks
+) {
+  pay_createCheckout(
+    amount: $amount
+    redirect: $redirect
+    partnerID: $partnerID
+  ) {
+    checkoutSessionID
+  }
+}

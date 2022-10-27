@@ -1,0 +1,11 @@
+mutation LoginFacebook($code: String!) {
+  auth_loginFacebook(code: $code) {
+    authToken
+    errors {
+      ...RegularError
+    }
+    user {
+      ...RegularUser
+    }
+  }
+}

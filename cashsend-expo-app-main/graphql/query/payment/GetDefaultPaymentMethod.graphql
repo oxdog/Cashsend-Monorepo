@@ -1,0 +1,5 @@
+query GetDefaultPaymentMethod {
+  pay_getDefaultPaymentMethod {
+    ...RegularPaymentMethod
+  }
+}

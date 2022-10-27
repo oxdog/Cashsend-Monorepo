@@ -1,0 +1,11 @@
+fragment RegularOrder on Order {
+  _id
+  partner {
+    name
+  }
+  type
+  amount
+  state
+  createdAt
+  transferGroup
+}
